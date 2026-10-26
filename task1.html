@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1 - Market Value Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/task1.js" defer></script>
+</head>
+<body class="py-5">
+    <div class="container col-12 col-md-6 text-center">
+        <h2 class="text-emerald fw-bold mb-3">Football Market Value Game</h2>
+        
+        <p>Жизни: <span id="lives" class="text-danger fw-bold">3</span> | Серия: <span id="streak" class="text-emerald fw-bold">0</span></p>
+
+        <div class="card custom-card p-4 mb-3">
+            <h4 id="player-name" class="text-emerald">Игрок</h4>
+            <h1 id="player-val" class="display-4 fw-bold">50 млн €</h1>
+        </div>
+
+        <div class="d-flex justify-content-center gap-3 mb-3">
+            <button id="btn-higher" class="btn btn-success px-4">Больше ▲</button>
+            <button id="btn-lower" class="btn btn-danger px-4">Меньше ▼</button>
+        </div>
+
+        <div id="msg" class="alert alert-info d-none"></div>
+        <button id="btn-reset" class="btn btn-outline-light d-none">Играть снова</button>
+    </div>
+</body>
+</html>
