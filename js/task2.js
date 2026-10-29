@@ -72,7 +72,7 @@ function moveItem(id, dir) {
             // Лимит: Не больше 3 в колонке "progress"
             const count = transfers.filter(t => t.status === "progress").length;
             if (count >= 3) {
-                alertMsg.textContent = "Ошибка: В колонке 'Переговоры' может быть максимум 3 игрока!";
+                alertMsg.textContent = "Error: There can be a maximum of 3 players in the 'Negotiations' column!";
                 alertMsg.classList.remove("d-none");
                 return;
             }

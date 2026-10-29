@@ -23,11 +23,11 @@ function validateField(input) {
     let error = "";
 
     if (input.hasAttribute("required") && !input.value.trim()) {
-        error = "Заполните это поле.";
+        error = "Fill in this field.";
     } else if (input.id === "sectorSelect" && input.value === "SoldOut") {
-        error = "Этот сектор распродан! Выберите VIP.";
+        error = "This section is sold out! Choose VIP.";
     } else if (input.id === "fullName" && input.value.trim().length < 3) {
-        error = "Имя слишком короткое (минимум 3 символа).";
+        error = "The name is too short (minimum 3 characters).";
     }
 
     if (error) {
@@ -60,7 +60,7 @@ form.addEventListener("submit", (e) => {
 
     if (isValid) {
         const msg = document.getElementById("result-msg");
-        msg.textContent = `Успешно! Ваш билет забронирован.`;
+        msg.textContent = `Success! Your ticket has been booked.`;
         msg.classList.remove("d-none");
         form.reset();
         updatePreview();

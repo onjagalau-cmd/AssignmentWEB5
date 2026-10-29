@@ -17,7 +17,7 @@
             <div class="col-12 col-md-6">
                 <form id="ticket-form" class="card custom-card p-4">
                     <div class="mb-3">
-                        <label for="fullName" class="form-label text-white">Имя и Фамилия *</label>
+                        <label for="fullName" class="form-label text-white">Name and Surname *</label>
                         <input type="text" id="fullName" class="form-control custom-input" required>
                         <div class="invalid-feedback" id="fullName-error"></div>
                     </div>
@@ -29,32 +29,32 @@
                     </div>
 
                     <div class="mb-3">
-                        <label for="sectorSelect" class="form-label text-white">Сектор *</label>
+                        <label for="sectorSelect" class="form-label text-white">Sector *</label>
                         <select id="sectorSelect" class="form-select custom-input" required>
-                            <option value="">Выберите сектор...</option>
+                            <option value="">Choose sector...</option>
                             <option value="VIP">VIP (200 €)</option>
-                            <option value="SoldOut">Fan Zone (Распродано)</option>
+                            <option value="SoldOut">Fan Zone (Sold out)</option>
                         </select>
                         <div class="invalid-feedback" id="sectorSelect-error"></div>
                     </div>
 
                     <div class="mb-3">
-                        <label for="ticketQty" class="form-label text-white">Количество (1-4) *</label>
+                        <label for="ticketQty" class="form-label text-white">Number (1-4) *</label>
                         <input type="number" id="ticketQty" class="form-control custom-input" min="1" max="4" required>
                         <div class="invalid-feedback" id="ticketQty-error"></div>
                     </div>
 
-                    <button type="submit" class="btn btn-success w-100 fw-bold">Забронировать</button>
+                    <button type="submit" class="btn btn-success w-100 fw-bold">book</button>
                 </form>
             </div>
 
             <div class="col-12 col-md-6">
                 <div class="card custom-card p-4 h-100">
-                    <h4 class="text-emerald mb-3">Ваш Билет 🎟️</h4>
-                    <p><strong>Имя:</strong> <span id="prev-name">Гость</span></p>
+                    <h4 class="text-emerald mb-3">Your Ticket 🎟️</h4>
+                    <p><strong>Name:</strong> <span id="prev-name">Guest</span></p>
                     <p><strong>Email:</strong> <span id="prev-email">-</span></p>
-                    <p><strong>Сектор:</strong> <span id="prev-sector">Не выбран</span></p>
-                    <p><strong>Итого:</strong> <span id="prev-price" class="text-emerald fw-bold fs-4">0 €</span></p>
+                    <p><strong>Sector:</strong> <span id="prev-sector">Not chosen</span></p>
+                    <p><strong>Total:</strong> <span id="prev-price" class="text-emerald fw-bold fs-4">0 €</span></p>
                     
                     <div id="result-msg" class="alert alert-success d-none mt-auto"></div>
                 </div>
